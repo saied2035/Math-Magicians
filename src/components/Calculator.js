@@ -35,6 +35,7 @@ class Calculator extends Component {
     );
   }
 }
+
 Calculator.propTypes = {
   symbols: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
 };
