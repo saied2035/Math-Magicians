@@ -1,0 +1,19 @@
+#calculator {
+	width: 50vw;
+	height: 70vh;
+	margin: 15vh auto;
+}
+#result-section {
+	background: #858694;
+	color: #fff;
+	font-size: 40px;
+	padding: 2rem;
+}
+#result {
+	display: block;
+	text-align: right;
+}
+#opertations-section {
+	list-style: none;
+	font-size: 40px;
+}
