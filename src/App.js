@@ -39,7 +39,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
     const { symbols, whatToCalculate } = this.state;
     const { handleCalculations } = this;
     return (

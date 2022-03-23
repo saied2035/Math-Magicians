@@ -2,13 +2,15 @@
   width: 60vw;
   margin: 4vh auto;
 }
+
 small {
   text-align: center;
-  margin-bottom:2px ;
+  margin-bottom: 2px;
   color: red;
   font-size: 17px;
   font-weight: bold;
 }
+
 #result-section {
   background: #858694;
   color: #fff;
@@ -33,10 +35,11 @@ small {
   border-top: 1.5px solid #bababa;
   border-bottom: 2px solid #bababa;
 }
-button {
- border: none;
 
+button {
+  border: none;
 }
+
 .cell {
   font-size: 30px;
   text-align: center;
