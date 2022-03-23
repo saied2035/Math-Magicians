@@ -1,6 +1,8 @@
+import './Calculator.css';
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Calculator.css';
+import operate from './logic/operate';
+import calculate from './logic/calculate';
 
 class Calculator extends Component {
   constructor(props) {
@@ -8,6 +10,12 @@ class Calculator extends Component {
     this.state = {
       result: 0,
     };
+    this.handleCalculations = this.handleCalculations.bind(this);
+  }
+
+  handleCalculations(e) {
+    const { calculationsHandler } = this.props;
+    calculationsHandler(e);
   }
 
   render() {
@@ -38,5 +46,6 @@ class Calculator extends Component {
 
 Calculator.propTypes = {
   symbols: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+  calculationsHandler: PropTypes.func.isRequired,
 };
 export default Calculator;

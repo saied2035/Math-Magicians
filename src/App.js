@@ -23,14 +23,27 @@ class App extends Component {
         [0, String.fromCharCode(0x065C), String.fromCharCode(0x003D)],
 
       ],
+      whatToCalculate: {
+        total: null,
+        next: null,
+        operation: null,
+      },
     };
+    this.handleCalculations = this.handleCalculations.bind(this);
+  }
+
+  handleCalculations(e) {
+    const { whatToCalculate } = this.state;
+    this.setState({
+      whatToCalculate: { ...whatToCalculate, operation: e.target.value },
+    });
   }
 
   render() {
     const { symbols } = this.state;
     return (
       <div className="App">
-        <Calculator symbols={symbols} />
+        <Calculator calculationsHandler={this.handleCalculations} symbols={symbols} />
       </div>
     );
   }
