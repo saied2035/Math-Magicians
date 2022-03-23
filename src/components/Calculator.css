@@ -1,6 +1,14 @@
 #calculator {
   width: 60vw;
-  margin: 6vh auto;
+  margin: 4vh auto;
+}
+
+small {
+  text-align: center;
+  margin-bottom: 2px;
+  color: red;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 #result-section {
@@ -28,14 +36,19 @@
   border-bottom: 2px solid #bababa;
 }
 
+button {
+  border: none;
+}
+
 .cell {
+  font-size: 30px;
   text-align: center;
   display: inline-block;
   background: #e0e0e0;
   padding: 1.5rem 0;
   width: 15vw;
   box-sizing: border-box;
-  border-right: 0.2vw solid #bababa;
+  border-right: 1px solid #bababa;
 }
 
 .cell:last-child {
@@ -48,5 +61,6 @@
 }
 
 span {
+  pointer-events: auto;
   cursor: default;
 }
